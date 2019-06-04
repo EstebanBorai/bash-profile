@@ -1,2 +1,2 @@
-# bash_profile
+# bash-profile
 > Configuration for BASH Terminal
