@@ -89,9 +89,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias git-daily="git log --graph --date=short --since=yesterday.midnight"
+# alias zshconfig="vim ~/.zshrc"
+# alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Tools Configurations
 
@@ -104,3 +103,21 @@ export NVM_DIR="$HOME/.nvm"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$HOME/.pyenv:$PATH"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# Functions
+nvm_init() {
+  FILE=./.nvmrc
+  if [ -f "$FILE" ]; then
+    eval "nvm use"
+  else
+    echo "Initializing .nvmrc"
+    eval "node -v > .nvmrc";
+  fi
+}
+
+# Aliases
+
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias git-daily="git log --graph --date=short --since=yesterday.midnight"
+alias nvminit="$(nvm_init)"
