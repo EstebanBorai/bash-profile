@@ -120,4 +120,3 @@ nvm_init() {
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias git-daily="git log --graph --date=short --since=yesterday.midnight"
-alias nvminit="$(nvm_init)"
