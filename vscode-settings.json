@@ -1,0 +1,77 @@
+{
+    "editor.tabSize": 2,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.renderWhitespace": "all",
+    "editor.fontFamily": "'Fira Code', monospace",
+    "editor.tokenColorCustomizations": {
+          "textMateRules": [{
+            "scope": [
+              "comment",
+              "punctuation.definition.comment",
+              "comment.block",
+              "comment.line",
+              "comment.block.documentation",
+              "comment.line.double-slash",
+              "entity.other.attribute-name",
+              "entity.other.attribute-name.html",
+              "markup.italic",
+              "entity.other.attribute-name.id",
+              "entity.other.attribute-name.class.css",
+              "entity.other.attribute-name.tag.jade",
+              "entity.other.attribute-name.class.jade",
+              "entity.other.attribute-name.id.jade",
+              "keyword.control",
+              "storage",
+              "emphasis",
+              "variable.language"
+            ],
+            "settings": {
+              "fontStyle": "italic"
+            }
+        }]
+    },
+    
+    // TypeScript
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    
+    // ESLint
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        { "language": "typescript", "autoFix": true },
+        { "language": "typescriptreact", "autoFix": true }
+    ],
+    
+    // Theme
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Oceanic Next",
+    
+    // Windows
+    "breadcrumbs.enabled": true,
+    
+    // Todo Tree
+    "todo-tree.customHighlight": {
+        "TODO": {
+            "type": "text",
+            "background": "#ffdb3f",
+            "iconColour": "#ffdb3f",
+            "foreground": "black",
+            "icon": "check"
+        },
+        "FIXME": {
+            "type": "text",
+            "background": "#fc4e4e",
+            "iconColour": "#fc4e4e",
+            "foreground": "black",
+            "icon": "alert"
+        }
+    },
+        "todo-tree.defaultHighlight": {
+        "foreground": "green",
+        "type": "none"
+    },
+}
