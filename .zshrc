@@ -105,7 +105,7 @@ export PATH="$HOME/.pyenv:$PATH"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # golang
-export GOPATH=$HOME/go
+export GOPATH="$HOME/Repositories/GOPATH"
 
 # Functions
 nvm_init() {
