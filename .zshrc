@@ -107,6 +107,9 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # golang
 export GOPATH="$HOME/Repositories/GOPATH"
 
+# dart pub
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
 # Functions
 nvm_init() {
   FILE=./.nvmrc
