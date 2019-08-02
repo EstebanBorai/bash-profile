@@ -52,26 +52,4 @@
     
     // Windows
     "breadcrumbs.enabled": true,
-    
-    // Todo Tree
-    "todo-tree.customHighlight": {
-        "TODO": {
-            "type": "text",
-            "background": "#ffdb3f",
-            "iconColour": "#ffdb3f",
-            "foreground": "black",
-            "icon": "check"
-        },
-        "FIXME": {
-            "type": "text",
-            "background": "#fc4e4e",
-            "iconColour": "#fc4e4e",
-            "foreground": "black",
-            "icon": "alert"
-        }
-    },
-        "todo-tree.defaultHighlight": {
-        "foreground": "green",
-        "type": "none"
-    },
 }
