@@ -108,6 +108,9 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 export GOPATH="$HOME/Repositories/GOPATH"
 export PATH="$PATH":"$HOME/Repositories/GOPATH/bin"
 
+# rust/cargo
+export PATH="$PATH":"$HOME/.cargo/bin"
+
 # dart pub
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
